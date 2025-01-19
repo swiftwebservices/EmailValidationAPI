@@ -24,4 +24,8 @@ API DOCUMENTATION Guide: http://www.proxy-connect.com/api.pdf
 We will post a single free daily API key ( Quota 10,000) that you can use to consume the API. This daily API key can be used by anyone until it is exhuasted. You can visit our website: https://proxy-connect.com/emailverifierapi/ to order for private API key for your email validation needs. 
 
 
+Donate : https://github.com/sponsors/swiftwebservices/button
+
+
+
 
