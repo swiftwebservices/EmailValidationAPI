@@ -1,40 +1,40 @@
-# EmailValidationAPI
-Swift Email Verifier provides dedicated, simple and powerful REST based real-time email validation API ( Application Programming Interface) without requiring you to upload your email addresses to our servers thereby offering you 100% privacy. We do not log nor store any of the email addresses and all verifications are done in real-time.
+We propose a decentralized KYC/AML gateway on the Algorand blockchain that verifies user identity via email + phone number checks, leveraging your existing Swift Email Verifier API and a third-party phone validation service. 
+
+ This system uses a stateful Algorand smart contract to enforce payments, quotas, and audit trails on-chain, ensuring transparency and tamper-proof logs. 
+Algorand Developer Portal
+ An off-chain oracle backend listens for validation requests, invokes the APIs, and returns results via 0-ALGO transactions. 
+
+ Integrations with DAOs, marketplaces, and tokenized access unlock new revenue models and community-driven identity reputations. 
+
+ This architecture meets global KYC/AML regulations, deters bots/fraud, and positions your company as a blockchain-first innovator. 
+
+ 1. Problem Statement & Market Opportunity
+1.1 Rising Regulatory Demands
+Fintech and crypto firms face escalating KYC/AML requirements to prevent money laundering, fraud, and terrorist financing—fines can exceed tens of millions of dollars for non-compliance. 
+
+ Major regulators in the US, EU, and Asia stipulate customer due diligence, ongoing transaction monitoring, and record-keeping. 
+Sumsub
+
+1.2 Fractured Identity Verification
+Traditional KYC/AML flows rely on centralized vendors, siloed databases, and manual reviews—incurring high costs (US$10 – 50 per user), slow onboarding (days), and single points of failure. 
+
+ Crypto DAOs and on-chain marketplaces lack native identity layers, exposing them to Sybil attacks, bots, and regulatory risk. 
 
 
-HOW IT WORKS
-===========
-We offer dedicated API servers with private IPs not shared by others so that you can maximize your inbox delivery and even warm up the IP to improve your reputation. You are in total control of your API server and can even monitor it against blacklists. Our goal is to help you reduce bounces and complaints for your email marketing. Our services goes beyond validations; we can detect emails with Greylisting enabled, Catch-all emails, Role/Function accounts, Disposable Email Addresses and Temporary unavailability of email accounts and malicious/bogus email domains and emails including over 900 million known spam traps and complainers.
+1.3 Demand for Web3-Native Solutions
+The Web3 ecosystem is hungry for decentralized, privacy-preserving identity frameworks that are interoperable across dApps and chains, minimize trust, and reduce KYC costs—especially for token sales, DeFi platforms, and NFT marketplaces. 
 
-To verify emails with the API, simply signup and download an approriate API client below or integrate into your own application. Using the API endpoint is pretty easy. All you need to do is perform a GET request using the schema below: http://<API_Server_IP>/CheckEmail/<api_key>/<email_address> 
+2. Proposed Solution Overview
+2.1 Core Components
+Algorand Stateful Smart Contract for gating and logging validation requests
 
-Output will be displayed in JSON format.
-Advanced Email Verifier third-party Windows program from Glock soft.
-Windows API client for Windows
- 
+Email Validation Module using your Swift Email Verifier API
 
-Why to choose us:
--Syntax, Typo, Fakes and Spam Traps Detector
--Catch-All Domain Email and Role Accounts Check
--Disposable Email Address Check
--Mail Server Existence Check
--Mail Existence Check
+Phone Validation Module via IPQualityScore or TeleSign APIs
 
-API DOCUMENTATION Guide: http://www.proxy-connect.com/api.pdf
+Oracle Backend to orchestrate API calls and on-chain callbacks
 
-==================================================================================
+Frontend SDK/dApp for seamless user onboarding and result retrieval
 
-***Free API kEY : t2kxrrwqjus
-*** API server IP: 45.79.227.90
-***API Request URL format: http://<API_Server_IP>/CheckEmail/<api_key>/<email_address>
-*** Example Request URL: http://45.79.227.90/CheckEmail/t2kxrrwqjus/mordor39005@gmail.com
-***Daily allowed Quota : 10,000
-
-This free API key can be used by anyone until it is exhuasted. You can visit our website: https://proxy-connect.com/emailverifierapi/ to order for private API key for your email validation needs. 
-
-
-Donate : https://github.com/sponsors/swiftwebservices/button
-
-
-
+DAO & Marketplace Integrations using tokenized access and on-chain reputation
 
